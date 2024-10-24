@@ -1,6 +1,8 @@
+import './Bottle.css'
+
 const Bottle = () => {
     return (
-        <div>
+        <div className='bottle'>
             <h2>Bottle - </h2>
         </div>
     );
