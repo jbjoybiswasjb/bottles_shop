@@ -15,11 +15,18 @@ const Bottles = () => {
             .then(data => setBottles(data))
     }, []);
 
+
+
+    // State Bottle cart.
+    const [cartBottles, setCartBottles] = useState([]);
+
     return (
         <div className="bottles">
             <h2 style={{marginBottom: '2rem', fontSize: '2rem'}}>
                 Bottles: {bottles.length}
             </h2>
+
+            <h3>Cart Bottles: {cartBottles.length}</h3>
 
             <div className='bottles_container'>
                 {
