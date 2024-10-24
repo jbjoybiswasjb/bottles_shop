@@ -1,6 +1,7 @@
 import './Bottle.css'
 
-const Bottle = () => {
+const Bottle = ({bottle}) => {
+    console.log(bottle);
     return (
         <div className='bottle'>
             <h2>Bottle - </h2>
