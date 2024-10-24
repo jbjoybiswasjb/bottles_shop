@@ -22,7 +22,8 @@ const Bottles = () => {
 
     // Handle Cart Bottles.
     const handleCartBottles = (bottle) => {
-        console.log(bottle);
+        const newCartBottles = [...cartBottles, bottle];
+        setCartBottles(newCartBottles);
     }
 
     return (

@@ -9,3 +9,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
+
+.bottles>h3,
+.bottles>h2 {
+    color: white;
+}
