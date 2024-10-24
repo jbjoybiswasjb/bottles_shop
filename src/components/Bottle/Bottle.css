@@ -4,6 +4,13 @@
     border-radius: 1rem;
 }
 
+.bottle h2 {
+    font-size: 1.5rem;
+    background-color: aliceblue;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
 .bottle img {
     height: 20rem;
     width: 19rem;
