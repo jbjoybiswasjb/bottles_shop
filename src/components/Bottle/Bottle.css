@@ -1,5 +1,7 @@
 .bottle {
     background-color: aqua;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .bottle img {

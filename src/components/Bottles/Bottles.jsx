@@ -18,7 +18,7 @@ const Bottles = () => {
     return (
         <div className="bottles">
             <h2>Bottles: {bottles.length}</h2>
-            <div>
+            <div className='bottles_container'>
                 {
                     bottles.map(bottle =>
                         <Bottle
