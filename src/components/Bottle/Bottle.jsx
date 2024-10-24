@@ -1,10 +1,14 @@
 import './Bottle.css'
 
 const Bottle = ({bottle}) => {
-    console.log(bottle);
+
+    const {img, name, price} = bottle;
+
     return (
         <div className='bottle'>
-            <h2>Bottle - </h2>
+            <h2>Bottle - {name}</h2>
+            <img src={img} alt={name} />
+            <p>Price: {price}</p>
         </div>
     );
 };
