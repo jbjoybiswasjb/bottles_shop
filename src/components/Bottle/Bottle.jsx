@@ -7,7 +7,7 @@ const Bottle = ({bottle}) => {
     return (
         <div className='bottle'>
             <h2>Bottle - {name}</h2>
-            <img src={img} alt={name} />
+            <img src={img} alt={name} title={name}/>
             <p>Price: {price}</p>
         </div>
     );
