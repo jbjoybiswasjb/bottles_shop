@@ -1,5 +1,5 @@
 .bottle {
-    background-color: #022f30;
+    background-color: #8ba2a2;
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -21,4 +21,19 @@
     font-size: 1.3rem;
     background-color: aliceblue;
     padding: .5rem;
+}
+
+.bottle button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f7f2f2;
+    border: none;
+    color: #000;
+    font-size: 1.1rem;
+    border-radius: 3rem;
+}
+
+.bottle button:hover {
+    background-color: #e3e0e0;
+    color: #0c0606;
 }

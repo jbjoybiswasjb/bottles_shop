@@ -9,6 +9,7 @@ const Bottle = ({bottle}) => {
             <h2>Bottle - {name}</h2>
             <img src={img} alt={name} title={name}/>
             <p>Price: {price} $</p>
+            <button>Purchase</button>
         </div>
     );
 };
