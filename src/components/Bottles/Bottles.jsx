@@ -20,6 +20,11 @@ const Bottles = () => {
     // State Bottle cart.
     const [cartBottles, setCartBottles] = useState([]);
 
+    // Handle Cart Bottles.
+    const handleCartBottles = (bottle) => {
+        console.log(bottle);
+    }
+
     return (
         <div className="bottles">
             <h2 style={{marginBottom: '2rem', fontSize: '2rem'}}>
@@ -34,6 +39,7 @@ const Bottles = () => {
                         <Bottle
                             bottle={bottle}
                             key={bottle?.id}
+                            handleCartBottles={handleCartBottles}
                         >
 
                         </Bottle>
