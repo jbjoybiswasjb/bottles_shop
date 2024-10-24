@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './Bottles.css';
 import { useState } from 'react';
+import Bottle from '../Bottle/Bottle';
 
 const Bottles = () => {
 
@@ -19,7 +20,11 @@ const Bottles = () => {
             <h2>Bottles: {bottles.length}</h2>
 
             <div>
-                
+                {
+                    bottles.map(bottle => 
+                        <Bottle></Bottle>
+                    )
+                }
             </div>
         </div>
     );
