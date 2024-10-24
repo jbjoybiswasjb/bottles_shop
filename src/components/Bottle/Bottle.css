@@ -1,5 +1,5 @@
 .bottle {
-    background-color: aqua;
+    background-color: #022f30;
     padding: 2rem;
     border-radius: 1rem;
 }
@@ -15,4 +15,10 @@
     height: 20rem;
     width: 19rem;
     border-radius: 1rem;
+}
+
+.bottle p {
+    font-size: 1.3rem;
+    background-color: aliceblue;
+    padding: .5rem;
 }
