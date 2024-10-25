@@ -23,5 +23,7 @@ const addCartToLS = id => {
 
     // Then convert the storedCartArray from array to string.
     saveCartToLS(storedCartArray);
-    
+
 }
+
+export { addCartToLS };
