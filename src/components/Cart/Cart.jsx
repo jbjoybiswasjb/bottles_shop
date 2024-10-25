@@ -1,3 +1,9 @@
+import PropTypes from 'prop-types';
+
+Cart.propTypes = {
+    cartBottles: PropTypes.array.isRequired,
+}
+
 import './Cart.css';
 
 const Cart = ({ cartBottles }) => {
