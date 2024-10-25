@@ -18,10 +18,20 @@ const Bottles = () => {
 
     // Load cart from LS.
     useEffect(() => {
-        console.log(bottles.length);
         if (bottles.length > 0) {
             const storedCartArrayOfId = getStoredCart();
-            console.log(storedCartArrayOfId);
+
+
+            let arrayOfCartBottles = [];
+
+            for (const id of storedCartArrayOfId) {
+                const cartBottle = bottles.find(bottle => bottle.id === id);
+                
+                if(cartBottle) {
+                    arrayOfCartBottles.push(cartBottle);
+                }
+            }
+            setCartBottles(arrayOfCartBottles);
         }
     }, [bottles])
 
