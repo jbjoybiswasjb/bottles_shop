@@ -26,4 +26,4 @@ const addCartToLS = id => {
 
 }
 
-export { addCartToLS };
+export { addCartToLS, getStoredCart };
