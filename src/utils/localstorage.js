@@ -4,4 +4,5 @@ const getStoredCart = () => {
     if (storedCart) {
         return JSON.parse(storedCart);
     }
+    return [];
 }
