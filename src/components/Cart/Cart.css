@@ -14,10 +14,23 @@
 .cart_container img {
     width: 10rem;
     height: 11rem;
+    border-radius: 1rem;
 }
 
 .cart h3 {
     color: #fff;
     font-size: 1.7rem;
     text-shadow: .2rem .2rem .2rem #000;
+}
+
+.cart_container button {
+    border: none;
+    background-color: aliceblue;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-top: .5rem;
+}
+
+.cart_container button:hover {
+    background-color: antiquewhite;
 }

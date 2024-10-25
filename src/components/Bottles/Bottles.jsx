@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './Bottles.css';
 import { useState } from 'react';
 import Bottle from '../Bottle/Bottle';
-import { addCartToLS, getStoredCart } from '../../utils/localStorage';
+import { addCartToLS, getStoredCart, removeFromLS } from '../../utils/localStorage';
 import Cart from '../Cart/Cart';
 
 const Bottles = () => {
@@ -48,13 +48,30 @@ const Bottles = () => {
         addCartToLS(bottle?.id);
     }
 
+
+
+    const handleRemoveFromCart = id => {
+        
+        // Visual cart remove
+
+
+        // Remove from LS
+        removeFromLS(id);
+
+    }
+
+
     return (
         <div className="bottles">
             <h2 style={{ marginBottom: '2rem', fontSize: '2rem' }}>
                 Bottles: {bottles.length}
             </h2>
 
-            <Cart cartBottles={cartBottles}></Cart>            
+            <Cart
+                cartBottles={cartBottles}
+                handleRemoveFromCart={handleRemoveFromCart}
+            >
+            </Cart>            
 
             <div className='bottles_container'>
                 {
