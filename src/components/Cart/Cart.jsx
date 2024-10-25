@@ -1,13 +1,8 @@
 import PropTypes from 'prop-types';
 
-Cart.propTypes = {
-    cartBottles: PropTypes.array.isRequired,
-}
-
 import './Cart.css';
 
 const Cart = ({ cartBottles }) => {
-    console.log(cartBottles)
     return (
         <div className='cart'>
             <h3>Cart Bottles: {cartBottles.length}</h3>
@@ -24,5 +19,10 @@ const Cart = ({ cartBottles }) => {
         </div>        
     );
 };
+
+
+Cart.propTypes = {
+    cartBottles: PropTypes.array.isRequired,
+}
 
 export default Cart;
