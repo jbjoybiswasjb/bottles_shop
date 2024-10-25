@@ -1,0 +1,23 @@
+.cart {
+    background-color: cadetblue;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.cart_container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.cart_container img {
+    width: 10rem;
+    height: 11rem;
+}
+
+.cart h3 {
+    color: #fff;
+    font-size: 1.7rem;
+    text-shadow: .2rem .2rem .2rem #000;
+}

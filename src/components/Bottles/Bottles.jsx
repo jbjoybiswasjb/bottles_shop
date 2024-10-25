@@ -3,6 +3,7 @@ import './Bottles.css';
 import { useState } from 'react';
 import Bottle from '../Bottle/Bottle';
 import { addCartToLS, getStoredCart } from '../../utils/localStorage';
+import Cart from '../Cart/Cart';
 
 const Bottles = () => {
 
@@ -53,7 +54,7 @@ const Bottles = () => {
                 Bottles: {bottles.length}
             </h2>
 
-            <h3>Cart Bottles: {cartBottles.length}</h3>
+            <Cart cartBottles={cartBottles}></Cart>            
 
             <div className='bottles_container'>
                 {
