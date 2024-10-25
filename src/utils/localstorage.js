@@ -10,6 +10,7 @@ const getStoredCart = () => {
 
 const saveCartToLS = storedCartArray => {
     const newCart = JSON.stringify(storedCartArray);
+    localStorage.setItem('cart', newCart);
 }
 
 
